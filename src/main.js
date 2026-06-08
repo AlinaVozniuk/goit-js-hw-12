@@ -84,7 +84,7 @@ async function handleLoadMore() {
 
         smoothScroll();
 
-        const totalPages = Math.ceil(totalHits / PER_PAGE);
+        const totalPages = Math.ceil(totalHits / sort_page);
 
         if (page >= totalPages) {
             iziToast.info({
